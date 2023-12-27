@@ -15,14 +15,12 @@ public class HelloController {
         return "Greetings from Spring Boot!";
     }
 
-    @RestController
-    public class ExampleController {
-
-        @PostMapping("/create")
-        public String create(@RequestBody(required = true) String data) {
-            // Process the data and create a resource
-            return "Resource created successfully";
-        }
+    @PostMapping("/users")
+    public String create(@RequestBody(required = true) String data) {
+        // Process the data and create a resource
+        return "Resource created successfully";
     }
 
+
+    
 }
